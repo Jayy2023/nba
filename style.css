@@ -1,0 +1,73 @@
+input[type="text"] {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 250px;
+
+  }
+  h1{
+    color: #17408B;
+  }
+
+  button {
+    background-color: #17408B;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  button:hover {
+    background-color: #C9082A;
+  }
+  
+  .playerStats {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    position: relative; 
+  }
+  
+  .playerStats h2 {
+    color: #2F4F4F;
+    font-size: 24px;
+    margin-top: 0;
+    
+
+  }
+  
+  .playerStats p {
+    color: #696969;
+    font-size: 16px;
+    margin: 10px 0;
+   
+  }
+   .playerStats img{
+    height: 200px;
+    width: 250px;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+  }
+
+  .logo {
+    background-image: url('images/nba-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+  }
+  
