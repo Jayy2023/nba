@@ -1,10 +1,10 @@
 
 const btn = document.querySelector('button');
-btn.onclick = searchPlayerWithImage;
+btn.onclick = searchPlayer;
 const playerStatsDiv = document.getElementById('playerStats');
 
 
-async function searchPlayerWithImage() {
+async function searchPlayer() {
   const playerName = document.getElementById('playerName').value;
   const apiUrl = 'https://www.balldontlie.io/api/v1/players?search=' + playerName;
 
@@ -50,7 +50,7 @@ async function generateRandomMeme() {
     const meme = memes[randomIndex];
 
     const memeImg = document.createElement('img');
-    memeImg.src = meme.url;s
+    memeImg.src = meme.url;
 
     playerStatsDiv.appendChild(memeImg);
   } catch (error) {
