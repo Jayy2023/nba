@@ -62,7 +62,7 @@ input[type="text"] {
     margin-top: 20px;
     margin-left: 10px;
     width: 195px;
-
+    background-color: #17408B;
   }
  
   body{
@@ -71,12 +71,95 @@ input[type="text"] {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+.playerName {
+  color: white;
+}
+
+.playerName::placeholder {
+  color: white;
+}
+
+.basketball{
+    position: relative;
+    top: 50px;
+    left: -50px;
+    margin-left: 300px;
+  }
+.ball{
+    position: absolute;
+    background-color: #e76f51;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 3px solid #333;
+    animation: bounce 1.5s ease-in infinite;
+  }
+.ball:before, .ball:after{
+    content: "";
+    position: absolute;
+    background-color: #333;
+    width: 110px;
+    height: 3px;
+    top: 50px;
+    left: -5px;
+  }
+  .ball:before{
+    transform: rotate(45deg);
+  }
+  .ball:after{
+    transform: rotate(-45deg);
+  }
+  .lines{
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #333;
+    width: 70px;
+    height: 70px;
+    left: -20px;
+    top: -20px;
+  }
+  .lines:before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #333;
+    width: 70px;
+    height: 70px;
+    top: 65px;
+    left: 60px;
+  }
+  .shadow{
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50%;
+    top: 95px;
+    z-index: -1;
+    left: 3px;
+    animation: scale 1.5s ease-in infinite;
+  }
+  @keyframes bounce {
+    0% {transform: translate3d(0, 0, 0) rotate(0deg);}
+   25% {transform: translate3d(0, -185px, 0) rotate(90deg);}
+   50% {transform: translate3d(0, 0, 0) rotate(180deg);}
+   75% {transform: translate3d(0, -185px, 0) rotate(270deg);}
+   100% {transform: translate3d(0, 0, 0) rotate(360deg);}
+ }
+ @keyframes scale {
+    0% {transform: scaleX(1);}
+    25% {transform: scaleX(0.7);}
+    50% {transform: scaleX(1);}
+    75% {transform: scaleX(0.7);}
+    100% {transform: scaleX(1);}
+  }
+
   .container{
     padding-left: 765px;
   }
-  .playerName{
-    color: #C9082A;
-  }
+
   h1{
     color: #17408B;
     padding-left: 710px;
@@ -117,7 +200,7 @@ input[type="text"] {
   
 
   .playerStats {
-    background-color: white;
+    background-color:#17408B;
     border-radius: 3px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
@@ -135,7 +218,7 @@ input[type="text"] {
   }
   
   .playerStats p {
-    color: #17408B;
+    color:#FFFFFF;
     font-size: 16px;
     margin: 10px 0;
    
@@ -143,6 +226,7 @@ input[type="text"] {
    .playerStats img{
     height: 180px;
     width: 180px;
+    border: white solid;
    position: absolute;
    top: 10px;
    right: 10px;
@@ -157,6 +241,8 @@ input[type="text"] {
    margin: 0 auto;
    margin-top: 80px;
  }
+
+
 
 @media all and (max-width: 900px) {
     .navbar {
@@ -204,7 +290,7 @@ input[type="text"] {
         margin-left: 75px;
         margin-bottom: 6px;
         width: 165px;
-    
+        background-color: #17408B;
       }
      
       body{
@@ -217,7 +303,7 @@ input[type="text"] {
         padding-left: 225px;
       }
       .playerName{
-        color: #C9082A;
+        color:#FFFFFF;
       }
       h1{
         color: #C9082A;
@@ -258,7 +344,7 @@ input[type="text"] {
       
     
       .playerStats {
-        background-color: white;
+        background-color:#17408B;
         border-radius: 20%;
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
         margin: 20px auto;
@@ -277,7 +363,7 @@ input[type="text"] {
       }
       
       .playerStats p {
-        color: #17408B;
+        color:#FFFFFF;
         font-size: 16px;
         margin: 10px 0;
        
@@ -289,6 +375,7 @@ input[type="text"] {
        position: absolute;
        top: 10px;
        right: 10px;
+       border: #FFFFFF solid;
       }
       .logo2 {
        background-image: url('images/nba-logo.png');
@@ -300,6 +387,83 @@ input[type="text"] {
        margin: 0 auto;
        margin-top: 45px;
      }
+
+     .basketball{
+      position: relative;
+      top: 50px;
+      left: -50px;
+      margin-left: 110px;
+    }
+  .ball{
+      position: absolute;
+      background-color: #e76f51;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      border: 3px solid #333;
+      animation: bounce 1.5s ease-in infinite;
+    }
+  .ball:before, .ball:after{
+      content: "";
+      position: absolute;
+      background-color: #333;
+      width: 110px;
+      height: 3px;
+      top: 50px;
+      left: -5px;
+    }
+    .ball:before{
+      transform: rotate(45deg);
+    }
+    .ball:after{
+      transform: rotate(-45deg);
+    }
+    .lines{
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid #333;
+      width: 70px;
+      height: 70px;
+      left: -20px;
+      top: -20px;
+    }
+    .lines:before{
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid #333;
+      width: 70px;
+      height: 70px;
+      top: 65px;
+      left: 60px;
+    }
+    .shadow{
+      position: absolute;
+      width: 100px;
+      height: 15px;
+      background-color: rgba(0,0,0,0.2);
+      border-radius: 50%;
+      top: 95px;
+      z-index: -1;
+      left: 3px;
+      animation: scale 1.5s ease-in infinite;
+    }
+    @keyframes bounce {
+      0% {transform: translate3d(0, 0, 0) rotate(0deg);}
+     25% {transform: translate3d(0, -185px, 0) rotate(90deg);}
+     50% {transform: translate3d(0, 0, 0) rotate(180deg);}
+     75% {transform: translate3d(0, -185px, 0) rotate(270deg);}
+     100% {transform: translate3d(0, 0, 0) rotate(360deg);}
+   }
+   @keyframes scale {
+      0% {transform: scaleX(1);}
+      25% {transform: scaleX(0.7);}
+      50% {transform: scaleX(1);}
+      75% {transform: scaleX(0.7);}
+      100% {transform: scaleX(1);}
+    }
+  
 
     .active {
         display: block;
