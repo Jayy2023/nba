@@ -470,7 +470,7 @@ input[type="text"] {
     }
 }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 300px) {
   .navbar {
     flex-direction: column;
     position: relative;
@@ -542,7 +542,7 @@ input[type="text"] {
     margin-left: -35px;
   }
   .container2{
-    padding-left: 60px;
+    padding-left: 40px;
     margin-top: -45px;
     padding-bottom: 20px;
   }
