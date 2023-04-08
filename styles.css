@@ -470,7 +470,7 @@ input[type="text"] {
     }
 }
 
-@media all and (max-width: 300px) {
+@media all and (max-width: 350px) {
   .navbar {
     flex-direction: column;
     position: relative;
