@@ -534,7 +534,7 @@ input[type="text"] {
       color:#FFFFFF;
     }
     h1{
-      display:list-item
+      display:list-item;
       color: #C9082A;
       font-size: 17px;
       padding-left: 11px;        
