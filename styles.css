@@ -517,7 +517,7 @@ input[type="text"] {
     background-size: cover;
   }
   .container{
-    padding-left: 60px;
+    padding-left: 40px;
   }
   .playerName{
     color:#FFFFFF;
@@ -542,7 +542,7 @@ input[type="text"] {
     margin-left: -35px;
   }
   .container2{
-    padding-left: 60px;
+    padding-left: 120px;
     margin-top: -45px;
     padding-bottom: 20px;
   }
